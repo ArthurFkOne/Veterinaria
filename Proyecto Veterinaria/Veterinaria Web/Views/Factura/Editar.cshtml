@@ -1,0 +1,73 @@
+﻿@model Veterinaria_Web.Models.Entities.Factura
+
+@{
+
+    Layout = "_LayoutDashboard";
+    <link rel="stylesheet" href="~/css/cruds.css" asp-append-version="true" />
+}
+
+
+<div class="container-fluid espaciado">
+    <div class="col-sm-8">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h1 class="text-white"><strong>Editar articulo</strong></h1>
+
+            </div>
+
+            <div class="card-body">
+
+                <form asp-action="Editar" method="post">
+
+                    <input type="hidden" asp-for="PkFactura" />
+
+                    <div class="form-group">
+                        <label asp-for="Nombre" class="control-label"></label>
+                        <input asp-for="Nombre" class="form-control" placeholder="Ingresa el nombre" required />
+
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Apellido" class="control-label"></label>
+                        <input asp-for="Apellido" class="form-control" placeholder="Ingresa el Apellido" required />
+
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Correo" class="control-label"></label>
+                        <input asp-for="Correo" class="form-control" placeholder="Ingresa el Usuario" required />
+
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Total" class="control-label"></label>
+                        <input asp-for="Total" class="form-control" placeholder="Ingresa el total" required />
+
+                    </div>
+                     <div class="form-group">
+                        <label asp-for="Identificador" class="control-label"></label>
+                        <input asp-for="Identificador" class="form-control" placeholder="Ingresa el identificador" required />
+
+                    </div>
+                  
+
+                    <div class="form-group mt-3">
+                        <button type="submit" class="btn btn-secondary d-block mx-auto"><i class="bi bi-person-fill"></i> Guardar</button>
+                    </div>
+
+                </form>
+
+                <a asp-controller="Factura" asp-action="Index">Volver</a>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+</div>

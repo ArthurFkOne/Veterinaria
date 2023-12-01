@@ -1,0 +1,89 @@
+html {
+  font-size: 14px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+ }
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-top: 40px;
+    margin-left: 35px;
+    margin-right: 35px;
+    background: #E9EAE9;
+    font-family: 'Quicksand', sans-serif;
+    width: 1366px;
+ 
+}
+
+.LogInicio {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.Bloque {
+    text-align: center;
+}
+
+.nav-inicio {
+    border-width: 3px;
+    border-style: solid;
+    border-color: #808080 !important;
+    background-color: #E9EAE9 !important;
+    border-radius: 15px;
+}
+a {
+    color: #596EA2;
+    text-decoration: none;
+    text-align: center;
+}
+
+    A:visited {
+        color: #596EA2;
+        text-decoration: none;
+    }
+
+    A:hover {
+        color: #596EA2;
+        text-decoration: none;
+    }
+
+
+
+@media screen and (max-width: 780px) {
+    .hero-section {
+        background-image: url('../img/Banner-c.png') !important;
+        padding: 10px !important;
+        justify-content: center !important;
+    }
+
+    .Cardg {
+        padding: 0 !important;
+    }
+
+    .hola {
+        display: none;
+    }
+
+    .al {
+        padding-right: 50px !important;
+    }
+}

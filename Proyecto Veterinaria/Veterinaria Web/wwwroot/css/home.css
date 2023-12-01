@@ -1,0 +1,284 @@
+﻿
+@media screen and (max-width: 780px) {
+    .hero-section {
+        background-image: url('../img/Banner-c.png') !important;
+        padding: 10px !important;
+        justify-content: center !important;
+    }
+
+    .Cardg {
+        padding: 0 !important;
+    }
+
+    .hola {
+        display: none;
+    }
+
+    .al {
+        padding-right: 110px !important;
+    }
+
+    
+}
+
+
+
+.hero-section {
+    margin-top: 40px;
+    background: url('../img/Group 83.png') 50% no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 573px;
+    text-align: center;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: left;
+    padding: 100px;
+}
+
+    .hero-section .hero-section-text {
+        color: #fefefe;
+        text-shadow: 1px 1px 2px #0a0a0a;
+    }
+
+
+
+
+
+
+.heros {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.color {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: #5CB9E1;
+}
+
+.card p {
+    color: #E9EAE9;
+}
+
+.card h1 {
+    color: #E9EAE9;
+}
+
+.jumbotron {
+    color: white;
+    background-image: url('../img/Group 83.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Cardg {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.Lista {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: #5CB9E1 !important;
+}
+
+
+.t {
+    width: 390px !important;
+    background: #5CB9E1;
+    border-color: #FFFFFF;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.t h5 {
+    color: #F5F5F5;
+}
+
+.cent {
+    text-align: center;
+    background-color: transparent  !important;
+    color: #E9EAE9 !important;
+}
+
+.cl1 {
+    background: #FFB80A !important;
+    text-align: center;
+}
+
+.cl2 {
+    background: #70FF52 !important;
+    text-align: center;
+}
+
+
+
+.ubi {
+    margin-top: 350px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #5CB9E1;
+    color: #FFFFFF;
+}
+
+.tituloss h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.margen {
+    margin-top: 40px !important;
+}
+
+.tituloss {
+    background: #FFFFFF;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 412px;
+    height: 50px;
+    margin-bottom: 57px;
+}
+
+
+.carta {
+    width: 1296px;
+    height: 567px;
+    padding-top: 40px;
+}
+
+.imagen {
+    text-align: center;
+    margin-bottom: 57px;
+}
+
+
+
+.color h3 {
+    color: #262D58;
+}
+
+.color h4 {
+    text-align: center;
+    color: #F5F5F5;
+    margin-bottom: 5px;
+}
+
+.color h5 {
+    text-align: center;
+    color: #F5F5F5;
+}
+
+.foond {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url('../img/Group 124.png');
+    background-repeat: no-repeat;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.color2 h3 {
+    color: #262D58;
+    text-align: center;
+    margin-bottom: 57px;
+}
+
+.container h3 {
+    color: #262D58;
+    text-align: center;
+    margin-bottom: 57px;
+    font-weight: bold;
+}
+
+.galeria {
+    width: 648px;
+    height: 349px;
+}
+
+.galeria2 {
+    width: 648px;
+    height: 349px;
+    padding: 40px;
+}
+
+.g {
+    background-image: url('../img/galeria.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.g2 {
+    background-image: url('../img/galeria2.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.g3 {
+    background-image: url('../img/galeria3.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.g4 {
+    background-image: url('../img/galeria4.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.v {
+    background: #70FF52;
+}
+
+.n {
+    background: #FFB80A;
+}
+
+.col-6 {
+    width: 648px !important;
+}
+
+.g5 {
+    background-image: url('../img/Local.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.g6 {
+    background-image: url('../img/Local2.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.h {
+    margin-top: 40px;
+}

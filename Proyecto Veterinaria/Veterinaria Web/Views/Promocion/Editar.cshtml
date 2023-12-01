@@ -1,0 +1,69 @@
+﻿@model Veterinaria_Web.Models.Entities.Promocion
+
+@{
+    Layout = "_LayoutDashBoard";
+    <link rel="stylesheet" href="~/css/cruds.css" asp-append-version="true" />
+}
+
+<div class="container-fluid espaciado">
+    <div class="col-sm-8">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h1 class="text-white"><strong>Editar usuario</strong></h1>
+
+            </div>
+
+            <div class="card-body">
+
+                <form asp-action="Editar" method="post">
+
+
+                    @*Id de la promocion oculto*@
+
+
+                    <input type="hidden" asp-for="PKPromocion" />
+
+                    <div class="form-group">
+                        <label asp-for="Descuento" class="control-label"></label>
+                        <input asp-for="Descuento" class="form-control" placeholder="Ingresa el nombre" required />
+
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="FechaInicio">Fecha de Inicio</label>
+                        <input asp-for="FechaInicio" type="date" class="form-control" />
+
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="FechaFin">Fecha de Fin</label>
+                        <input asp-for="FechaFin" type="date" class="form-control" />
+
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">Articulo</label>
+                        <select asp-for="FkArticulo" asp-items="ViewBag.Articulo" class="select2-placeholder-multiple form-control">
+                            <option value="">-- Selecciona --</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <button type="submit" class="btn btn-secondary d-block mx-auto"><i class="bi bi-person-fill"></i> Guardar</button>
+                    </div>
+
+                </form>
+
+                <a asp-controller="Promocion" asp-action="Index">Volver</a>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>

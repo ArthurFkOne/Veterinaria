@@ -1,0 +1,102 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    <link rel="stylesheet" href="~/css/cita.css" asp-append-version="true" />
+    Layout = "_Layout";
+
+}
+
+<div class="hero-container">
+    <div class="hero-text">
+        <b><h1 id="titulo">AGENDA TU CITA</h1></b>
+        <p id="sub">Nos preocupamos por toda tu familia</p>
+    </div>
+    <div class="hero-image">
+        <img id="img1" src="img/hero.png" alt="Imagen del héroe">
+    </div>
+</div>
+
+<div class="contenedor-descuentos">
+    <a id="cono"><img src="img/icono1.png" width="50px" height="50px" id="cono2">Llamanos</a>
+    <br>
+    <a id="cono3">+52 998-XXX-XX</a>
+    <a id="cono"><img src="img/icono2.png" width="50px" height="50px" id="cono2">Urgencias</a>
+    <br>
+    <a id="cono3">+52 998-XXX-XX</a>
+    <a id="cono"><img src="img/icono3.png" width="50px" height="50px" id="cono2">WhatsApp</a>
+    <br>
+    <a id="cono3">+52 998-XXX-XX</a>
+</div>
+
+
+<div class="otraparte">
+    <h3 id="sadul">PREPARA TU CITA</h3>
+    <h5 id="salud">Cualquier consulta o solicitud de información específica, con mucho gusto le ayudaremos.</h5>
+</div>
+<br />
+<br />
+<br />
+<div class="container">
+    <b><p id="ola">USUARIO</p></b>
+    <div class="column">
+        <div class="form-group">
+            <label for="field1">Nombre:</label>
+            <input type="text" id="field1" name="field1">
+        </div>
+        <div class="form-group">
+            <label for="field2">Apellido:</label>
+            <input type="text" id="field2" name="field2">
+        </div>
+        <div class="form-group">
+            <label for="selectOption">Servicio a utilizar:</label>
+            <select id="selectOption" name="selectOption">
+                <option value="opcion1">Estetica</option>
+                <option value="opcion2">Vacuna</option>
+                <option value="opcion3">Revision</option>
+            </select>
+        </div>
+
+    </div>
+    <div class="column">
+        <div class="form-group">
+            <label for="field5">Correo:</label>
+            <input type="text" id="field5" name="field5">
+        </div>
+        <div class="form-group">
+            <label for="field6">Telefono-celular:</label>
+            <input type="text" id="field6" name="field6">
+        </div>
+        <div class="form-group">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha">
+        </div>
+    </div>
+
+    <b><p id="ola">MASCOTA</p></b>
+    <div class="column">
+        <div class="form-group">
+            <label for="field1">Nombre:</label>
+            <input type="text" id="field1" name="field1">
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="form-group">
+            <label for="selectOption">Animal:</label>
+            <select id="selectOption" name="selectOption">
+                <option value="opcion1">Perro</option>
+                <option value="opcion2">Gato</option>
+                <option value="opcion3">Ave</option>
+                <option value="opcion4">Tortuga</option>
+            </select>
+        </div>
+    </div>
+
+</div>
+<div style="clear: both;"></div>
+<button type="submit">Enviar</button>
+    </div>
+
+
+ </div>

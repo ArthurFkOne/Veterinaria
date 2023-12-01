@@ -1,0 +1,10 @@
+CREATE PROCEDURE spGetArticulos
+
+AS
+BEGIN
+
+SELECT* FROM Articulos
+END
+
+
+
