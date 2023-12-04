@@ -1,0 +1,165 @@
+﻿@model IEnumerable<Veterinaria_Web.Models.Entities.Articulo>
+
+@{
+
+    Layout = "_LayoutDashboard";
+}
+
+<h1>
+    Dashboard
+</h1>
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="offset-10 col-4 mb-4">
+            <a asp-action="Crear" asp-controller="Articulo" class="btn-success mx-auto btn-lg"> Nuevo</a>
+        </div>
+    </div>
+
+    <div class="offset-12">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h1 class="text-white"><strong>Lista de articulos</strong></h1>
+
+            </div>
+
+            <div class="card-body">
+                <div class="table-responsive">
+
+                    @if (Model.Count() > 0)
+                    {
+
+                        <table class="table table-bordered" id="tblArticulo" width="100%" cellspacing="0">
+                            <thead>
+                                <tr>
+
+                                    <th> #</th>
+                                    <th> @Html.DisplayNameFor(x => x. Nombre)</th>
+                                    <th> @Html.DisplayNameFor(x => x.Descripcion )</th>
+                                    <th> @Html.DisplayNameFor(x => x.Precio )</th>
+
+
+                                </tr>
+
+                            </thead>
+                            <tbody>
+
+                                @{
+                                    int i = 1;
+                                }
+
+                                @foreach (var Item in Model)
+                                {
+                                    <tr>
+                                        <td><span>@(i++)</span></td>
+                                        <td> @Html.DisplayFor(x => Item.Nombre )</td>
+                                        <td> @Html.DisplayFor(x => Item.Descripcion )</td>
+                                        <td> @Html.DisplayFor(x => Item.Precio) </td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                }
+
+                            </tbody>
+
+                        </table>
+
+                    }
+                    else
+                    {
+                        <p>No hay registros</p>
+                    }
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            //Llamar a datatable
+            $('#tblArticulo').DataTable({
+                language: {
+                    "decimal": "",
+                    "emptyTable": "No hay información",
+                    "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
+                    "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+                    "infoFiltered": "(Filtrado de _MAX_ total entradas)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Mostrar _MENU_ Entradas",
+                    "loadingRecords": "Cargando...",
+                    "processing": "Procesando...",
+                    "search": "Buscar:",
+                    "zeroRecords": "Sin resultados encontrados",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Ultimo",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    }
+                }
+            });
+
+
+
+            $('.eliminar-articulo').on('click', function () {
+                if (confirm('¿Estás seguro de que deseas eliminar este artículo?')) {
+
+
+
+
+                    var articuloId = $(this).data('id');
+
+                    $.ajax({
+                        url: '/Articulo/Eliminar/' + articuloId,
+                        type: 'DELETE',
+                        success: function (data) {
+                            console.log(data)
+
+                            if (data.succes == true) {
+                                //debugger
+                                location.reload(); // Recarga la página completa
+                                //window.location.href = "/Articulos/Index";
+                            }
+
+                        }
+                    });
+
+                }
+            });
+
+
+
+
+
+
+
+
+            function GetId(id) {
+
+            }
+
+            var table = $('#tblArticulo').DataTable();
+
+
+
+            $('#tblArticulo').on('click', 'tr', function () {
+                var id = table.row(this).id();
+
+                alert('Clicked row id ' + id);
+            });
+
+        });
+
+
+
+
+    </script>
+
+    }

@@ -1,0 +1,127 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .botones button {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+.tituloS {
+    background-color: #5CB9E1;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-top: 40px;
+}
+
+.card {
+    background: #5CB9E1;
+    color: white;
+    width: 193px;
+    height: 364px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+ 
+
+}
+
+.conts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 57px;
+}
+
+    .conts .nomp {
+        padding-top: 20px;
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+
+    .conts h3 {
+        padding-bottom: 5px;
+        font-size: 15px;
+        margin: 0px;
+    }
+
+.botonComp {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 18px;
+    width: 169px;
+    height: 37px;
+    margin-top: 15px;
+}
+
+
+.mua{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+
+.back{
+
+    background-color: transparent;
+
+}
+
+.card {
+    
+    margin: 10px;
+}
+
+.card_enka {
+    text-align: center;
+}
+
+    .card_enka img {
+        border-radius: 15px;
+        width: 193px;
+        height: 172px;
+        border-color: black;
+        border-width:5px;
+    }
+
+
+.botones button:hover {
+    background-color: #5CB9E1;
+    color: white;
+}
+
+.botones button:focus {
+    outline: none;
+    background-color: #5CB9E1;
+    color: white;
+}
+
+.botones button:active {
+    transform: scale(0.95);
+     
+}
+
+.botones button {
+    background-color: white;
+    color: #5CB9E1;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    border-radius: 15px;
+    font-weight: 400;
+    margin-left: 15px;
+    margin-right:15px;
+}
+

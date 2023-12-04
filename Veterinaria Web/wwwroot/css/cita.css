@@ -1,0 +1,158 @@
+﻿* {
+    background-color: #E9EAE9;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#img1 {
+    width: 443.95px;
+    height: 304px;
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+#titulo {
+    font-size: 64px;
+    color: #05AAE7;
+}
+
+#sub {
+    font-size: 24px;
+    color: #CF982D;
+}
+
+.hero-text {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 50px;
+    color: #fff;
+}
+
+.hero-image {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+@media (max-width: 768px) {
+    .hero-text,
+    .hero-image {
+        width: 100%;
+        float: none;
+    }
+    
+}
+
+.contenedor-descuentos {
+    display: flex;
+    align-items: center;
+    background-color: #5CB9E1;
+    height: 133px;
+}
+
+#cono {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 10px 10px;
+    background-color: #5CB9E1;
+    padding: 20px;
+}
+
+#cono2 {
+    vertical-align: middle;
+    margin-right: 5px;
+    background-color: #5CB9E1;
+}
+
+#cono3 {
+    margin: 10px 10px;
+    color: #ffffff;
+    background-color: #5CB9E1;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .contenedor,
+    .contenedor-descuentos {
+        flex-direction: column;
+        align-items: center;
+        height: 650px;
+    }
+}
+
+.objeto {
+    margin: 10px 0;
+}
+
+.container2 {
+    background-color: #5CB9E1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px; /* Ajusta según sea necesario */
+}
+
+.form-group {
+    background-color: #5CB9E1;
+}
+
+.form-row {
+    background-color: #5CB9E1;
+}
+
+.form-check {
+    background-color: #5CB9E1;
+}
+
+form {
+    background-color: #5CB9E1;
+}
+
+label {
+    background-color: #5CB9E1;
+    color: #ffffff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    background-color: #5CB9E1;
+}
+
+#sadul {
+    color: #5CB9E1;
+
+    text-align:center;
+}
+
+#salud {
+    color: #CF982D;
+    
+    text-align: center;
+}
+
+.otraparte {
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    #sadul {
+        margin-left: 20px !important;
+    }
+
+    #salud {
+        margin-left: 10px !important;
+            
+    }
+}

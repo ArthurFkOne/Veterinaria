@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Veterinaria_Web.Models.Entities.Articulo>
+@{
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="~/css/venta.css" asp-append-version="true" />
+}
+
+
+
+
+<div class="tituloS">
+    <h1>Productos</h1>
+</div>
+
+
+
+    <div class="album py-5 back">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mua">
+
+
+        @foreach (var Item in Model)
+        {
+
+
+            
+
+                <div class="card">
+                    <img src="/@Html.DisplayFor(x => Item.UrlImagenPath)" alt="">
+               
+                <div class="conts">
+                    <h2 class="nomp">@Html.DisplayFor(x => Item.Nombre )</h2>
+                    <h3 class="descrip">@Html.DisplayFor(x => Item.Descripcion )</h3>
+                    <h3 class="precio">Precio: @Html.DisplayFor(x => Item.Precio )</h3>
+                    <h3 class="descrip">Disponibles: @Html.DisplayFor(x => Item.Cantidad )</h3>
+
+                    <button class="botonComp">
+                        ¡Comprar!
+                    </button>
+                </div>
+                
+
+            </div>
+
+
+        }
+            </div>
+
+
+
+
+        </div>
+    </div>
+    
+<script src ="site.js">

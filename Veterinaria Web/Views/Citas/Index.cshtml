@@ -1,0 +1,96 @@
+﻿@model Veterinaria_Web.Models.Entities.Citas
+@{
+    <link rel="stylesheet" href="~/css/cita.css" asp-append-version="true" />
+    Layout = "_Layout";
+
+}
+
+<div class="hero-container">
+    <div class="hero-text">
+        <b><h1 id="titulo">AGENDA TU CITA</h1></b>
+        <p id="sub">Nos preocupamos por toda tu familia</p>
+    </div>
+    <div class="hero-image">
+        <img id="img1" src="img/hero.png" alt="Imagen del héroe">
+    </div>
+</div>
+
+<div class="contenedor-descuentos">
+    <a id="cono"><img src="img/icono1.png" width="50" height="50" id="cono2">Llamanos</a>
+    <br>
+    <a id="cono3">+52 998-XXX-XX</a>
+    <a id="cono"><img src="img/icono2.png" width="50" height="50" id="cono2">Urgencias</a>
+    <br>
+    <a id="cono3">+52 998-XXX-XX</a>
+    <a id="cono"><img src="img/icono3.png" width="50" height="50" id="cono2">WhatsApp</a>
+    <br>
+    <a id="cono3">+52 998-XXX-XX</a>
+</div>
+
+
+<div class=" otraparte">
+    <h3  id="sadul">PREPARA TU CITA</h3>
+    <h5  id="salud">Cualquier consulta o solicitud de información específica, con mucho gusto le ayudaremos.</h5>
+</div>
+<br />
+<br />
+<br />
+<div class="container2">
+    <b><label>USUARIO</label></b>
+    <form asp-action="Crear" asp-controller="Citas" method="post" enctype="multipart/form-data">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Nombre:</label>
+                <input asp-for="Nombre" type="text" class="form-control" id="inputEmail4" placeholder="Ingrese su nombre">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Apellido:</label>
+                <input asp-for="Apellido" type="text" class="form-control" id="inputPassword4" placeholder="Ingrese su apellido">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Telefono:</label>
+            <input asp-for="Numero" type="number" class="form-control" id="inputAddress" placeholder="contacto">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress2">Correo:</label>
+            <input asp-for="Correo" type="email" class="form-control" id="inputAddress2" placeholder="name@example.com">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="fecha">Fecha:</label>
+                <input asp-for="Fecha" type="datetime-local" id="fecha" name="fecha">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">Servicio:</label>
+                <select asp-for="Servicio" id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Estetica</option>
+                    <option>Vacunacion</option>
+                    <option>Consulta</option>
+                    <option>Dentista</option>
+                </select>
+            </div>
+            <b><label>MASCOTA</label></b>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Nombre:</label>
+                    <input asp-for="Nombreanimal" type="text" class="form-control" id="inputEmail4" placeholder="Escriba el nombre de su mascota">
+                </div>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="inputState">Especie:</label>
+                <select asp-for="Animal" id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Perro</option>
+                    <option>Gato</option>
+                    <option>Ave</option>
+                    <option>Tortuga</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Agendar</button>
+
+        </div>
+    </form>
+</div>
