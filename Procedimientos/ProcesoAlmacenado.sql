@@ -3,8 +3,8 @@ CREATE PROCEDURE spGetArticulos
 AS
 BEGIN
 
-SELECT* FROM Articulos
-END
+SELECT* FROM Articulos;
+END;
 
 
 

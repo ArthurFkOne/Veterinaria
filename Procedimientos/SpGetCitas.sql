@@ -1,5 +1,5 @@
-create procedure SpGetCitas
-as
-begin
-select * from Cita
-end
+CREATE PROCEDURE SpGetCitas
+AS
+BEGIN
+SELECT * FROMÂ Cita
+END

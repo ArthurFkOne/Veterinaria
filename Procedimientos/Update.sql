@@ -1,11 +1,11 @@
-create procedure SpEditarRol
+CREATE PROCEDURE SpEditarRol
 
-@idr int,
-@Nombrer nvarchar(50)
-as
-begin
-Update Roles
-set
+@idr INT,
+@Nombrer NVARCHAR(50)
+AS
+BEGIN
+UPDATE Roles
+SET
 Nombre=@Nombrer
-Where PkRoles=@idr
-end
+WHERE PkRoles=@idr
+END;
